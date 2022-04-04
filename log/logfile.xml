@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="2" assertions="1" errors="1" warnings="0" failures="0" skipped="0" time="0.002899">
+    <testsuite name="My Test Suite" tests="2" assertions="1" errors="1" warnings="0" failures="0" skipped="0" time="0.002899">
+      <testsuite name="CpfTest" file="/home/igor/project/arquitetura/testes/CpfTest.php" tests="2" assertions="1" errors="1" warnings="0" failures="0" skipped="0" time="0.002899">
+        <testcase name="testCpfInvalido" class="CpfTest" classname="CpfTest" file="/home/igor/project/arquitetura/testes/CpfTest.php" line="9" assertions="0" time="0.002504">
+          <error type="Error">CpfTest::testCpfInvalido
+Error: Class 'http\Exception\InvalidArgumentException' not found
+
+/home/igor/project/arquitetura/src/CPF.php:15
+/home/igor/project/arquitetura/testes/CpfTest.php:12</error>
+        </testcase>
+        <testcase name="testCpfValido" class="CpfTest" classname="CpfTest" file="/home/igor/project/arquitetura/testes/CpfTest.php" line="16" assertions="1" time="0.000395"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

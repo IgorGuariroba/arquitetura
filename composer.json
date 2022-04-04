@@ -1,0 +1,17 @@
+{
+  "autoload": {
+    "psr-4": {
+      "igor\\Arquitetura\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/php-invoker": "^3.1",
+    "phpunit/phpunit": "^9.5",
+    "symfony/phpunit-bridge": "^6.0"
+  },
+  "autoload-dev":{
+    "psr-4": {
+      "igor\\Arquitetura\\Testes\\": "testes/"
+    }
+  }
+}
