@@ -4,22 +4,20 @@
 namespace igor\Arquitetura;
 
 
-use Alura\Arquitetura\Telefone;
-
 class Aluno
 {
     private string $nome;
-    private CPF $cpf;
+    private Cpf $cpf;
     private Email $email;
-
     private array $telefones;
+
 
     /**
      * @throws \Exception
      */
-    public static function comCpfNomeEEmail(string $cpf, string $nome, string $email): self
+    public static function comCpfEmailNome(string $numeroCpf, string $email, string $nome): self
     {
-        return new Aluno(new Cpf($cpf), $nome, new Email($email));
+        return new Aluno(new CPF($numeroCpf), $nome, new Email($email));
     }
 
     public function __construct(Cpf $cpf, string $nome, Email $email)
@@ -27,6 +25,7 @@ class Aluno
         $this->cpf = $cpf;
         $this->nome = $nome;
         $this->email = $email;
+        $this->nome = $nome;
     }
 
     public function adicionarTelefone(string $ddd, string $numero)

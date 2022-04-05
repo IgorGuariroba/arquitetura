@@ -5,7 +5,7 @@ namespace igor\Arquitetura;
 
 
 
-class CPF
+class Cpf
 {
     private string $cpf;
 
