@@ -1,6 +1,6 @@
 <?php
 
-namespace igor\Arquitetura;
+namespace igor\Arquitetura\Dominio\Aluno;
 
 
 class Telefone

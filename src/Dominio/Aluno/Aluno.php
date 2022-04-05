@@ -1,8 +1,11 @@
 <?php
 
 
-namespace igor\Arquitetura;
+namespace igor\Arquitetura\Dominio\Aluno;
 
+
+use igor\Arquitetura\Dominio\Cpf;
+use igor\Arquitetura\Dominio\Email;
 
 class Aluno
 {

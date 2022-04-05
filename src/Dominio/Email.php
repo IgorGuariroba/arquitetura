@@ -1,7 +1,7 @@
 <?php
 
 
-namespace igor\Arquitetura;
+namespace igor\Arquitetura\Dominio;
 
 
 class Email
