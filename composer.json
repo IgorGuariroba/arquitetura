@@ -13,5 +13,8 @@
     "psr-4": {
       "igor\\Arquitetura\\Testes\\": "testes/"
     }
+  },
+  "require": {
+    "ext-pdo": "*"
   }
 }
