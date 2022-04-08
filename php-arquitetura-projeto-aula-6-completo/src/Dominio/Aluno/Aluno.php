@@ -1,26 +1,21 @@
 <?php
 
+namespace Alura\Arquitetura\Dominio\Aluno;
 
-namespace igor\Arquitetura\Dominio\Aluno;
-
-
-use igor\Arquitetura\Dominio\Cpf;
-use igor\Arquitetura\Dominio\Email;
+use Alura\Arquitetura\Dominio\Cpf;
+use Alura\Arquitetura\Dominio\Email;
 
 class Aluno
 {
-    private string $nome;
     private Cpf $cpf;
+    private string $nome;
     private Email $email;
     private array $telefones;
+    private string $senha;
 
-
-    /**
-     * @throws \Exception
-     */
-    public static function comCpfEmailNome(string $numeroCpf, string $email, string $nome): self
+    public static function comCpfNomeEEmail(string $cpf, string $nome, string $email): self
     {
-        return new Aluno(new CPF($numeroCpf), $nome, new Email($email));
+        return new Aluno(new Cpf($cpf), $nome, new Email($email));
     }
 
     public function __construct(Cpf $cpf, string $nome, Email $email)
@@ -28,7 +23,6 @@ class Aluno
         $this->cpf = $cpf;
         $this->nome = $nome;
         $this->email = $email;
-        $this->nome = $nome;
         $this->telefones = [];
     }
 
@@ -40,7 +34,7 @@ class Aluno
 
     public function cpf(): string
     {
-        return $this->cpf();
+        return $this->cpf;
     }
 
     public function nome(): string
@@ -53,8 +47,8 @@ class Aluno
         return $this->email;
     }
 
-    /** @return  Telefone[] */
-    public function telefones():array
+    /** @return Telefone[] */
+    public function telefones(): array
     {
         return $this->telefones;
     }
